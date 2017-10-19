@@ -55,7 +55,6 @@ public class IndexFiles {
     private IndexFiles() {}
 
     /** Index all text files under a directory. */
-    //-index Data -docs Doc
     public static void main(String[] args) {
         String usage = "java org.apache.lucene.demo.IndexFiles"
                 + " [-index INDEX_PATH] [-docs DOCS_PATH] [-update]\n\n"
@@ -178,6 +177,15 @@ public class IndexFiles {
             // or positional information:
             Field pathField = new StringField("path", file.toString(), Field.Store.YES);
             doc.add(pathField);
+
+            BufferedReader buff= new BufferedReader(new InputStreamReader(Files.newInputStream(file), StandardCharsets.UTF_8));
+
+            String title = buff.readLine();
+            buff.close();
+
+            Field titleField = new StringField("title", title, Field.Store.YES);
+            doc.add(titleField);
+
 
             // Add the last modified date of the file a field named "modified".
             // Use a LongPoint that is indexed (i.e. efficiently filterable with

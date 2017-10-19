@@ -22,8 +22,9 @@ public class SimpleServer {
         Server server = new Server(new InetSocketAddress("127.0.0.1", 8080));
         server.setHandler(new SimpleHandler());
         server.start();
-        server.join();
         System.out.println("Da khoi dong server");
+        server.join();
+        
     }
 
 }
