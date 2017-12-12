@@ -17,6 +17,7 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import java.io.FileReader;
 import java.io.FileWriter;
+import java.util.Date;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -37,7 +38,7 @@ public class MainClass {
 
     public void readFileTXT() {
 
-        String fileName = "/home/sonnguyen/NetBeansProjects/TKTTTD/File TXT/MachineLearning.txt";
+        String fileName = "/home/sonnguyen/NetBeansProjects/TKTTTD/File TXT/sachhay.txt";
         try (Stream<String> stream = Files.lines(Paths.get(fileName), StandardCharsets.UTF_8)) {//đưa về dạng chuẩn utf8
             stream.forEach(line -> {
                 System.out.println(line);
@@ -103,7 +104,7 @@ public class MainClass {
         }
         collection.add(queryDetail1);
         root.put("collection", collection);
-        try (FileWriter file = new FileWriter("MachineLearning.json")) {
+        try (FileWriter file = new FileWriter("sachhay.json")) {
             root.writeJSONString(file);  // prefer this form
             file.flush();
         } catch (Exception e) {
@@ -176,12 +177,18 @@ public class MainClass {
         }
 
         root.put("collection", collection);
-        try (FileWriter file = new FileWriter("MIXFILEJSON.json")) {
+        try (FileWriter file = new FileWriter("Group02-INPG12.json")) {
             root.writeJSONString(file);  // prefer this form
             file.flush();
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    public void getTime() {
+        Date d = new Date();
+        long miniSecond = d.getTime();
+        System.out.println(miniSecond);
     }
 
     /**
@@ -194,8 +201,9 @@ public class MainClass {
 //        main.processURL();
 //        main.proJSON();
 //        main.readJSON();
-        main.getFileJSON();
-        main.mixFileJSON();
+//        main.getFileJSON();
+//        main.mixFileJSON();
+        main.getTime();
     }
 
 }

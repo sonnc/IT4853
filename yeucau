@@ -1,3 +1,9 @@
 1. Viet file log
 2. danh chi muc tu file JSON
 3. cau hinh lai
+
+27/10/2017
+1. trích đọan văn bản, trả về đoạn văn có câu truy vấn
+2. Cấu hình cho phép chạy trên cổng nào 
+3. giao diện tìm kiếm
+4. tùy chỉnh file searcher.conf

@@ -22,14 +22,28 @@ import org.apache.lucene.search.IndexSearcher;
 import org.apache.lucene.search.Query;
 import org.apache.lucene.search.ScoreDoc;
 import org.apache.lucene.search.TopDocs;
+import org.apache.lucene.search.highlight.Formatter;
+import org.apache.lucene.search.highlight.Fragmenter;
+import org.apache.lucene.search.highlight.Highlighter;
+import org.apache.lucene.search.highlight.QueryScorer;
+import org.apache.lucene.search.highlight.SimpleHTMLFormatter;
+import org.apache.lucene.search.highlight.SimpleSpanFragmenter;
+import org.apache.lucene.search.highlight.TokenSources;
 import org.apache.lucene.store.FSDirectory;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
 import java.io.IOException;
 import java.nio.file.Paths;
+import org.apache.lucene.analysis.TokenStream;
+import org.apache.lucene.search.highlight.Formatter;
+import org.apache.lucene.search.highlight.Highlighter;
+import org.apache.lucene.search.highlight.InvalidTokenOffsetsException;
+import org.apache.lucene.search.highlight.QueryScorer;
+import org.apache.lucene.search.highlight.SimpleHTMLFormatter;
 
 public class SimpleSearcher {
+
     public static final String index_path = Configs.getInstance().getString("index.dir");
     public static final String field = "contents";
     private static final Logger logger = LogManager.getLogger(SimpleSearcher.class);
@@ -37,31 +51,54 @@ public class SimpleSearcher {
     private IndexSearcher searcher = null;
     private Analyzer analyzer = new StandardAnalyzer();
     private QueryParser parser = new QueryParser(field, analyzer);
-    public static final int hitsPerPage = 3;
+    public static final int hitsPerPage = 10;
+
     public SimpleSearcher() throws IOException {
         logger.debug("Loading index from " + index_path);
         reader = DirectoryReader.open(FSDirectory.open(Paths.get(index_path)));
         searcher = new IndexSearcher(reader);
     }
-    public JSONObject search(String query_text, int page) throws ParseException, IOException {
+
+    public JSONArray search(String query_text, int page) throws ParseException, IOException, InvalidTokenOffsetsException {
         Query query = parser.parse(query_text);
         TopDocs results = searcher.search(query, 1000);
         ScoreDoc[] hits = results.scoreDocs;
-        JSONObject out = new JSONObject();
+        //JSONObject out = new JSONObject();
         JSONArray arr = new JSONArray();
 
         int start = (page - 1) * hitsPerPage;
         int end = start + hitsPerPage;
 
+        Formatter formatter = new SimpleHTMLFormatter();
+        QueryScorer scorer = new QueryScorer(query);
+        Highlighter highlighter = new Highlighter(formatter, scorer);
+        Fragmenter fragmenter = new SimpleSpanFragmenter(scorer, 10);
+        highlighter.setTextFragmenter(fragmenter);
+
         for (int i = start; i < Math.min(end, hits.length); ++i) {
             ScoreDoc scoreDoc = hits[i];
             Document doc = searcher.doc(scoreDoc.doc);
             JSONObject obj = new JSONObject();
-            obj.put("path", doc.get("path"));
+//            obj.put("path", doc.get("path"));
+            String text = doc.get("content");
+            TokenStream stream = TokenSources.getAnyTokenStream(reader, scoreDoc.doc, "content", analyzer);
+
+            //Get highlighted text fragments
+            String[] frags = highlighter.getBestFragments(stream, text, 20);
+            String highlight = "";
+            for (String frag : frags) {
+                highlight = highlight + frag;
+                System.out.println(highlight);
+            }
+            obj.put("url", doc.get("url"));
             obj.put("title", doc.get("title"));
+//            obj.put("content", doc.get("content"));
+            obj.put("frags", highlight);
+
             arr.add(obj);
         }
-        out.put("hits", arr);
-        return out;
+        //  out.put("hits", arr);
+        // return out;
+        return arr;
     }
 }

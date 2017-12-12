@@ -4,10 +4,15 @@
         <Console name="Console">
             <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
         </Console>
+        <File name="SimpleSearcher" fileName="logs/logSearch.log" append="true">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </File>
     </Appenders>
-    <Loggers>
-        <Root level="trace">
+    <Loggers> 
+        <Logger name="hust.sie.inpg12.mainclass" level="debug" />
+        <Root level="info">
             <AppenderRef ref="Console"/>
+            <AppenderRef ref="SimpleSearcher"/>
         </Root>
     </Loggers>
 </Configuration>

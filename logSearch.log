@@ -1,0 +1,7 @@
+Loading index from /home/sonnguyen/NetBeansProjects/TKTTTD/Data
+11:28:02.915 [main] DEBUG hust.sie.inpg12.mainclass.SimpleSearcher - Loading index from /home/sonnguyen/NetBeansProjects/TKTTTD/Data
+11:28:13.857 [qtp1922154895-15] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: hệ thống page: null
+11:29:46.361 [qtp1922154895-14] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: kết nối page: null
+01:10:02.127 [qtp1922154895-18] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: trong page: null
+01:10:12.284 [qtp1922154895-16] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: hệ thống page: null
+01:10:26.873 [qtp1922154895-18] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: hệ thống quản trị page: null
