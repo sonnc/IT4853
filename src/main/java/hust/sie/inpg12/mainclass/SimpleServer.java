@@ -20,7 +20,7 @@ public class SimpleServer {
      */
     public static void main(String[] args) throws Exception {
         // TODO code application logic here
-        Server server = new Server(new InetSocketAddress("127.0.0.1", 8080));
+        Server server = new Server(new InetSocketAddress("192.168.1.119", 8080));
         server.setHandler(new SimpleHandler());
         server.start();
         System.out.println("Da khoi dong server");

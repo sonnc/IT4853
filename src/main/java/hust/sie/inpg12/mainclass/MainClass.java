@@ -36,6 +36,7 @@ public class MainClass {
     String query;
     String description;
 
+    // đọc file .txt
     public void readFileTXT() {
 
         String fileName = "/home/sonnguyen/NetBeansProjects/TKTTTD/File TXT/sachhay.txt";
@@ -50,6 +51,7 @@ public class MainClass {
         System.out.println(arrURL);
     }
 
+    // xử lý url
     public void processURL() throws IOException {
         for (int i = 0; i < arrURL.size(); i++) {
             if (i == 0) {

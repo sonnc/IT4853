@@ -245,3 +245,200 @@
 09:26:06.989 [main] DEBUG hust.sie.inpg12.mainclass.SimpleSearcher - Loading index from /home/sonnguyen/NetBeansProjects/TKTTTD/Data
 09:27:59.764 [main] DEBUG hust.sie.inpg12.mainclass.SimpleSearcher - Loading index from /home/sonnguyen/NetBeansProjects/TKTTTD/Data
 09:28:07.230 [qtp960604060-15] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: trong page: null
+21:06:05.248 [main] DEBUG hust.sie.inpg12.mainclass.SimpleSearcher - Loading index from /home/sonnguyen/NetBeansProjects/TKTTTD/Data
+21:08:31.171 [qtp960604060-14] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: null page: null
+21:08:31.190 [qtp960604060-14] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: null page: null
+21:08:57.291 [qtp960604060-13] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: hệ thống cơ sở dữ liệu page: null
+21:10:18.524 [qtp960604060-15] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: trong page: null
+21:11:19.384 [main] DEBUG hust.sie.inpg12.mainclass.SimpleSearcher - Loading index from /home/sonnguyen/NetBeansProjects/TKTTTD/Data
+21:15:07.526 [main] DEBUG hust.sie.inpg12.mainclass.SimpleSearcher - Loading index from /home/sonnguyen/NetBeansProjects/TKTTTD/Data
+21:15:25.066 [qtp1684106402-18] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: giải thuật tìm kiếm nhị phân page: null
+21:16:24.194 [qtp1684106402-18] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: giải thuật tìm kiếm nhị phân page: 2
+21:17:02.734 [qtp1684106402-18] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: giải thuật tìm kiếm nhị phân page: 3
+21:18:06.177 [qtp1684106402-18] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: giải thuật tìm kiếm nhị phân page: 4
+21:21:31.955 [main] DEBUG hust.sie.inpg12.mainclass.SimpleSearcher - Loading index from /home/sonnguyen/NetBeansProjects/TKTTTD/Data
+21:21:39.238 [qtp1684106402-17] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: giải thuật tìm kiếm nhị phân page: null
+21:21:42.638 [qtp1684106402-17] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: giải thuật tìm kiếm nhị phân page: null
+21:30:56.616 [main] DEBUG hust.sie.inpg12.mainclass.SimpleSearcher - Loading index from /home/sonnguyen/NetBeansProjects/TKTTTD/Data
+21:31:08.201 [qtp960604060-13] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: hệ thống cơ sở dữ liệu page: null
+21:37:26.515 [main] DEBUG hust.sie.inpg12.mainclass.SimpleSearcher - Loading index from /home/sonnguyen/NetBeansProjects/TKTTTD/Data
+21:37:39.232 [qtp960604060-15] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: hệ thống cơ sở dữ liệu page: null
+21:37:44.173 [qtp960604060-17] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: hệ thống cơ sở dữ liệu page: 11
+21:37:50.227 [qtp960604060-17] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: hệ thống cơ sở dữ liệu page: 111
+21:37:50.576 [qtp960604060-15] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: hệ thống cơ sở dữ liệu page: 1111
+21:37:51.291 [qtp960604060-14] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: hệ thống cơ sở dữ liệu page: 11111
+21:37:52.142 [qtp960604060-18] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: hệ thống cơ sở dữ liệu page: 111111
+21:38:25.587 [main] DEBUG hust.sie.inpg12.mainclass.SimpleSearcher - Loading index from /home/sonnguyen/NetBeansProjects/TKTTTD/Data
+21:38:31.717 [qtp960604060-11] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: hệ thống cơ sở dữ liệu page: null
+21:38:34.955 [qtp960604060-16] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: hệ thống cơ sở dữ liệu page: 2
+21:38:38.589 [qtp960604060-16] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: hệ thống cơ sở dữ liệu page: 3
+21:38:56.800 [qtp960604060-16] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: hệ thống cơ sở dữ liệu page: 3
+21:38:59.458 [qtp960604060-16] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: hệ thống cơ sở dữ liệu page: 2
+21:39:26.616 [main] DEBUG hust.sie.inpg12.mainclass.SimpleSearcher - Loading index from /home/sonnguyen/NetBeansProjects/TKTTTD/Data
+21:39:38.463 [qtp960604060-13] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: internet vàn vật là gì page: null
+21:39:45.904 [qtp960604060-14] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: internet vàn vật là gì page: 2
+21:39:49.470 [qtp960604060-14] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: internet vàn vật là gì page: 4
+21:40:38.635 [main] DEBUG hust.sie.inpg12.mainclass.SimpleSearcher - Loading index from /home/sonnguyen/NetBeansProjects/TKTTTD/Data
+21:40:48.795 [qtp960604060-16] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: hệ thống cơ sở dữ liệu page: null
+21:41:06.882 [qtp960604060-14] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: hệ thống cơ sở dữ liệu page: 2
+21:41:14.236 [qtp960604060-14] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: hệ thống cơ sở dữ liệu page: 10
+21:41:17.255 [qtp960604060-18] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: hệ thống cơ sở dữ liệu page: 3
+21:41:20.280 [qtp960604060-13] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: hệ thống cơ sở dữ liệu page: 4
+21:41:47.340 [main] DEBUG hust.sie.inpg12.mainclass.SimpleSearcher - Loading index from /home/sonnguyen/NetBeansProjects/TKTTTD/Data
+21:42:03.079 [qtp1684106402-19] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: động đất page: null
+21:43:33.349 [qtp1684106402-19] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: động đất page: 2
+21:44:16.322 [qtp1684106402-20] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: động đất page: 4
+21:44:43.207 [qtp1684106402-20] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: dsvsd page: null
+21:44:57.435 [qtp1684106402-20] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: học page: null
+21:45:10.142 [qtp1684106402-21] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: học page: 4
+21:45:50.837 [main] DEBUG hust.sie.inpg12.mainclass.SimpleSearcher - Loading index from /home/sonnguyen/NetBeansProjects/TKTTTD/Data
+21:45:54.437 [qtp960604060-14] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: học page: 4
+21:45:57.852 [qtp960604060-16] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: học page: 5
+21:46:01.031 [qtp960604060-11] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: học page: 9
+21:46:17.490 [qtp960604060-11] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: học page: 10
+21:46:23.361 [qtp960604060-11] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: học page: 12
+21:46:27.430 [qtp960604060-11] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: học page: 14
+21:48:25.672 [main] DEBUG hust.sie.inpg12.mainclass.SimpleSearcher - Loading index from /home/sonnguyen/NetBeansProjects/TKTTTD/Data
+21:48:37.663 [qtp960604060-13] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: hệ thống cơ sở dữ liệu page: null
+21:48:42.668 [qtp960604060-16] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: hệ thống cơ sở dữ liệu page: 2
+21:48:48.879 [qtp960604060-16] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: hệ thống cơ sở dữ liệu page: 3
+21:48:56.192 [qtp960604060-16] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: hệ thống cơ sở dữ liệu page: 4
+21:53:14.202 [main] DEBUG hust.sie.inpg12.mainclass.SimpleSearcher - Loading index from /home/sonnguyen/NetBeansProjects/TKTTTD/Data
+21:53:26.443 [qtp960604060-11] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: sóng thần page: null
+21:53:49.179 [qtp960604060-17] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: sóng thần page: 2
+21:54:03.623 [qtp960604060-11] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: Hệ thống page: null
+21:54:10.069 [qtp960604060-17] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: Hệ thống page: 2
+21:54:15.076 [qtp960604060-14] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: Hệ thống page: 3
+21:54:25.754 [qtp960604060-16] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: Hệ thống page: 4
+21:54:25.791 [qtp960604060-16] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: Hệ thống page: 4
+21:54:29.623 [qtp960604060-14] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: Hệ thống page: 5
+21:54:29.628 [qtp960604060-14] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: Hệ thống page: 5
+21:54:34.665 [qtp960604060-17] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: Hệ page: 3
+21:54:34.679 [qtp960604060-17] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: Hệ page: 3
+21:54:39.759 [qtp960604060-11] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: hệ page: 3
+21:54:39.776 [qtp960604060-11] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: hệ page: 3
+21:54:43.046 [qtp960604060-18] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: hệ page: null
+21:54:46.299 [qtp960604060-11] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: hệ page: 2
+21:54:48.721 [qtp960604060-14] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: hệ page: 3
+21:54:48.728 [qtp960604060-14] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: hệ page: 3
+21:54:55.348 [qtp960604060-11] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: hệ page: 4
+21:54:59.488 [qtp960604060-14] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: hệ page: 3
+21:54:59.496 [qtp960604060-14] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: hệ page: 3
+21:55:02.468 [qtp960604060-18] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: hệ page: 3
+21:55:02.476 [qtp960604060-18] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: hệ page: 3
+21:55:05.803 [qtp960604060-17] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: hệ page: 5
+21:55:05.808 [qtp960604060-17] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: hệ page: 5
+21:56:45.872 [main] DEBUG hust.sie.inpg12.mainclass.SimpleSearcher - Loading index from /home/sonnguyen/NetBeansProjects/TKTTTD/Data
+21:56:53.461 [main] DEBUG hust.sie.inpg12.mainclass.SimpleSearcher - Loading index from /home/sonnguyen/NetBeansProjects/TKTTTD/Data
+21:57:02.985 [qtp960604060-16] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: hệ thống cơ sở dữ liệu page: null
+21:57:11.259 [qtp960604060-17] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: hệ thống cơ sở dữ liệu page: 2
+21:57:26.678 [qtp960604060-13] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: hệ thống cơ sở dữ liệu page: 3
+21:57:33.575 [qtp960604060-18] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: hệ thống cơ sở dữ liệu page: 4
+21:57:38.134 [qtp960604060-15] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: hệ thống cơ sở dữ liệu page: 5
+21:57:40.703 [qtp960604060-16] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: hệ thống cơ sở dữ liệu page: 6
+21:57:47.099 [qtp960604060-17] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: hệ thống cơ sở dữ liệu page: 7
+21:57:53.565 [qtp960604060-15] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: đất nưóc page: null
+22:00:20.491 [qtp960604060-13] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: đất nưóc page: 2
+22:06:26.145 [main] DEBUG hust.sie.inpg12.mainclass.SimpleSearcher - Loading index from /home/sonnguyen/NetBeansProjects/TKTTTD/Data
+12:49:32.335 [main] DEBUG hust.sie.inpg12.mainclass.SimpleSearcher - Loading index from /home/sonnguyen/NetBeansProjects/TKTTTD/Data
+12:49:32.335 [main] DEBUG hust.sie.inpg12.mainclass.SimpleSearcher - Loading index from /home/sonnguyen/NetBeansProjects/TKTTTD/Data
+12:50:20.749 [qtp960604060-18] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: Hệ thống cơ sở dữ liệu page: null
+10:45:34.679 [main] DEBUG hust.sie.inpg12.mainclass.SimpleSearcher - Loading index from /home/sonnguyen/NetBeansProjects/TKTTTD/Data
+10:46:12.033 [main] DEBUG hust.sie.inpg12.mainclass.SimpleSearcher - Loading index from /home/sonnguyen/NetBeansProjects/TKTTTD/Data
+10:46:56.441 [qtp960604060-16] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: sách cơ sở dữ liệu page: null
+10:47:02.462 [qtp960604060-14] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: sách cơ sở dữ liệu page: 2
+10:47:07.667 [qtp960604060-11] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: sách cơ sở dữ liệu page: 1
+10:47:12.329 [qtp960604060-11] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: sách cơ sở dữ liệu page: 3
+10:47:15.747 [qtp960604060-11] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: sách cơ sở dữ liệu page: 4
+10:47:36.149 [qtp960604060-11] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: sách cơ sở dữ liệu page: 3
+10:47:49.519 [qtp960604060-11] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: sách cơ sở dữ liệu page: 2
+10:47:54.981 [qtp960604060-11] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: sách cơ sở dữ liệu page: 1
+19:55:47.723 [main] DEBUG hust.sie.inpg12.mainclass.SimpleSearcher - Loading index from /home/sonnguyen/NetBeansProjects/TKTTTD/Data
+19:56:37.927 [qtp960604060-16] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: học sách page: null
+19:57:23.424 [qtp960604060-16] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: trong page: null
+19:57:35.873 [qtp960604060-14] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: he thong thong tin quan ly page: null
+19:57:55.928 [qtp960604060-17] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: he thong thong tin quan ly page: 2
+20:02:07.747 [qtp960604060-12] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: he thong thong tin quan ly page: 1
+20:02:25.182 [qtp960604060-12] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: hệ thống cơ sở dữ liệu page: null
+20:08:22.734 [qtp960604060-14] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: hệ thống cơ sở dữ liệu page: 3
+20:08:29.715 [qtp960604060-14] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: hệ thống cơ sở dữ liệu page: 2
+20:08:32.808 [qtp960604060-14] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: hệ thống cơ sở dữ liệu page: 1
+08:20:33.462 [main] DEBUG hust.sie.inpg12.mainclass.SimpleSearcher - Loading index from /home/sonnguyen/NetBeansProjects/TKTTTD/Data
+08:21:12.733 [qtp960604060-14] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: hệ thống thông tin quản lý page: null
+08:21:21.101 [qtp960604060-14] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: hệ thống thông tin quản lý page: 2
+08:21:24.859 [qtp960604060-13] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: hệ thống thông tin quản lý page: 4
+08:21:29.205 [qtp960604060-16] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: hệ thống thông tin quản lý page: 5
+08:23:32.899 [main] DEBUG hust.sie.inpg12.mainclass.SimpleSearcher - Loading index from /home/sonnguyen/NetBeansProjects/TKTTTD/Data
+08:23:58.641 [qtp960604060-13] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: hòa page: null
+08:24:08.047 [qtp960604060-14] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: sơn page: null
+08:24:12.392 [qtp960604060-14] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: tài page: null
+08:24:18.256 [qtp960604060-14] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: trọng page: null
+08:26:44.752 [main] DEBUG hust.sie.inpg12.mainclass.SimpleSearcher - Loading index from /home/sonnguyen/NetBeansProjects/TKTTTD/Data
+08:26:58.931 [qtp960604060-15] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: giải thuật tìm kiếm nhị phân page: null
+08:27:22.468 [qtp960604060-17] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: học sách page: null
+08:27:38.406 [qtp960604060-16] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: học máy page: null
+08:31:34.134 [qtp960604060-15] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: học máy page: 2
+08:31:37.673 [qtp960604060-15] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: học máy page: 3
+08:32:12.037 [main] DEBUG hust.sie.inpg12.mainclass.SimpleSearcher - Loading index from /home/sonnguyen/NetBeansProjects/TKTTTD/Data
+08:32:12.247 [main] DEBUG hust.sie.inpg12.mainclass.SimpleSearcher - Loading index from /home/sonnguyen/NetBeansProjects/TKTTTD/Data
+08:32:18.175 [qtp960604060-14] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: hệ thống cơ sở dữ liệu page: null
+08:32:30.003 [qtp960604060-17] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: hệ thống cơ sở dữ liệu page: 2
+08:32:33.730 [qtp960604060-17] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: hệ thống cơ sở dữ liệu page: 3
+08:32:37.118 [qtp960604060-17] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: hệ thống cơ sở dữ liệu page: 2
+08:32:39.992 [qtp960604060-17] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: hệ thống cơ sở dữ liệu page: 1
+08:36:17.660 [main] DEBUG hust.sie.inpg12.mainclass.SimpleSearcher - Loading index from /home/sonnguyen/NetBeansProjects/TKTTTD/Data
+08:36:28.763 [qtp960604060-13] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: hệ thống cơ sở dữ liệu page: null
+08:39:22.391 [qtp960604060-17] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: hệ thống cơ sở dữ liệu page: 2
+08:39:29.109 [qtp960604060-17] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: hệ thống cơ sở dữ liệu page: 3
+08:39:35.157 [qtp960604060-17] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: giải thuật tìm kiếm nhị phân page: null
+08:44:31.940 [main] DEBUG hust.sie.inpg12.mainclass.SimpleSearcher - Loading index from /home/sonnguyen/NetBeansProjects/TKTTTD/Data
+08:44:50.735 [qtp960604060-13] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: giải thuật tìm kiếm nhị phân page: null
+08:44:55.416 [qtp960604060-16] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: giải thuật tìm kiếm nhị phân page: null
+08:46:51.024 [main] DEBUG hust.sie.inpg12.mainclass.SimpleSearcher - Loading index from /home/sonnguyen/NetBeansProjects/TKTTTD/Data
+08:46:56.545 [qtp960604060-14] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: giải thuật tìm kiếm nhị phân page: null
+08:48:13.768 [main] DEBUG hust.sie.inpg12.mainclass.SimpleSearcher - Loading index from /home/sonnguyen/NetBeansProjects/TKTTTD/Data
+08:48:13.791 [main] DEBUG hust.sie.inpg12.mainclass.SimpleSearcher - Loading index from /home/sonnguyen/NetBeansProjects/TKTTTD/Data
+08:48:17.389 [qtp960604060-14] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: giải thuật tìm kiếm nhị phân page: null
+08:48:17.518 [qtp960604060-14] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: giải thuật tìm kiếm nhị phân page: null
+08:48:28.857 [qtp960604060-16] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: giải thuật tìm kiếm nhị phân page: null
+08:48:28.867 [qtp960604060-16] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: giải thuật tìm kiếm nhị phân page: null
+08:53:27.690 [main] DEBUG hust.sie.inpg12.mainclass.SimpleSearcher - Loading index from /home/sonnguyen/NetBeansProjects/TKTTTD/Data
+08:53:41.218 [qtp960604060-11] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: giải thuật tìm kiếm nhị phân page: null
+08:56:32.744 [qtp960604060-15] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: đọc sách page: null
+08:57:12.938 [main] DEBUG hust.sie.inpg12.mainclass.SimpleSearcher - Loading index from /home/sonnguyen/NetBeansProjects/TKTTTD/Data
+08:57:25.084 [qtp960604060-15] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: giải thuật tìm kiếm nhị phân page: null
+08:58:49.336 [qtp960604060-14] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: đọc sách page: 2
+08:58:53.215 [qtp960604060-14] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: đọc sách page: 3
+08:58:57.007 [qtp960604060-17] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: đọc sách page: 4
+08:59:00.282 [qtp960604060-16] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: đọc sách page: 5
+08:59:03.960 [qtp960604060-14] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: đọc sách page: 6
+08:59:07.335 [qtp960604060-13] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: đọc sách page: 7
+08:59:09.793 [qtp960604060-17] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: đọc sách page: 6
+08:59:14.191 [qtp960604060-14] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: đọc sách page: 5
+08:59:17.091 [qtp960604060-16] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: đọc sách page: 4
+08:59:20.022 [qtp960604060-18] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: đọc sách page: 3
+08:59:34.645 [qtp960604060-13] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: đọc sách page: 2
+08:59:36.960 [qtp960604060-17] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: đọc sách page: 1
+09:02:56.384 [qtp960604060-16] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: hệ thống cơ sở dữ liệu page: null
+09:04:36.674 [qtp960604060-14] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: tim kiem page: null
+09:05:24.172 [qtp960604060-18] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: tim kiem page: 2
+09:05:27.753 [qtp960604060-13] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: tim kiem page: 3
+09:05:30.967 [qtp960604060-17] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: tim kiem page: 4
+09:05:33.193 [qtp960604060-16] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: tim kiem page: 5
+09:05:35.234 [qtp960604060-14] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: tim kiem page: 6
+09:05:37.700 [qtp960604060-13] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: tim kiem page: 8
+09:05:54.795 [qtp960604060-18] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: giai thuat tim kiem page: null
+09:11:07.682 [qtp960604060-17] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: giai thuat tim kiem page: 2
+09:11:10.626 [qtp960604060-16] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: hệ thống cơ sở dữ liệu page: null
+09:11:14.427 [qtp960604060-18] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: giai thuat tim kiem page: 3
+09:12:42.143 [qtp960604060-17] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: sách cơ sở dữ liệu page: null
+09:12:49.378 [qtp960604060-18] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: học sách page: null
+09:12:55.555 [qtp960604060-13] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: thong tin page: null
+09:13:07.174 [qtp960604060-13] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: thong tin page: 2
+09:13:09.967 [qtp960604060-14] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: thong tin page: 1
+09:14:50.944 [qtp960604060-18] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: giai thuat tim kiem page: 100
+09:14:51.986 [qtp960604060-13] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: thong tin page: 2
+09:14:55.764 [qtp960604060-17] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: thong tin page: 3
+09:14:58.368 [qtp960604060-17] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: thong tin page: 4
+09:15:02.504 [qtp960604060-16] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: giai thuat tim kiem page: 99
+09:15:14.711 [qtp960604060-17] DEBUG hust.sie.inpg12.mainclass.SimpleHandler - Query: giai thuat tim kiem page: 1000

@@ -163,84 +163,6 @@ public class IndexFiles {
         }
     }
 
-    /**
-     * Indexes the given file using the given writer, or if a directory is
-     * given, recurses over files and directories found under the given
-     * directory.
-     *
-     * NOTE: This method indexes one document per input file. This is slow. For
-     * good throughput, put multiple documents into your input file(s). An
-     * example of this is in the benchmark module, which can create "line doc"
-     * files, one document per line, using the
-     * <a href="../../../../../contrib-benchmark/org/apache/lucene/benchmark/byTask/tasks/teLineDocTask.html"
-     * >WriteLineDocTask</a>.
-     *
-     * @param writer Writer to the index where the given file/dir info will be
-     * stored
-     * @param path The file to index, or the directory to recurse into to find
-     * files to index
-     * @throws IOException If there is a low-level I/O error
-     */
-    //path  là Docs
-//    public static void indexDocs(final IndexWriter writer, Path path) throws IOException {
-//        if (Files.isDirectory(path)) {
-//            Files.walkFileTree(path, new SimpleFileVisitor<Path>() {
-//                @Override
-//                public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) throws IOException {
-//                    for (int i = arrSize; i < arrJson.size(); i++) {
-//                        arrSize = arrSize + 1;
-//                        site = (JSONArray) arrJson.get(i).arrSites;
-//                        Iterator<JSONObject> iterator = site.iterator();
-//                        while (iterator.hasNext()) {
-//                            SiteUrl s = new SiteUrl();
-//                            JSONObject factObj = (JSONObject) iterator.next();
-//                            s.url = (String) factObj.get("url");
-//                            s.title = (String) factObj.get("title");
-//                            s.content = (String) factObj.get("content");
-//                            arrSite.add(s);
-//                        }
-//                    }
-//                    for (int j = arrSiteSize; j < arrSite.size(); j++) {
-//                        arrSiteSize = arrSiteSize + 1;
-//                        indexDoc(writer, 
-//                                file,
-//                                arrSite.get(j).url,
-//                                arrSite.get(j).title,
-//                                arrSite.get(j).content,
-//                                Files.getLastModifiedTime(path).toMillis());
-//                    }
-//                    return FileVisitResult.CONTINUE;
-//                }
-//
-//            });
-//        } else {
-//            //      indexDoc(writer, path, Files.getLastModifiedTime(path).toMillis());
-//        }
-//    }
-//
-//    /**
-//     * Indexes a single document
-//     */
-//    public static void indexDoc(IndexWriter writer, Path path, String url, String title, String contents, long lastModified) throws IOException {
-//        try (InputStream stream = Files.newInputStream(path)) {
-//            Document doc = new Document();
-//            Field urlField = new StringField("url", url.toString(), Field.Store.YES);
-//            doc.add(urlField);
-//            Field titleField = new StringField("title", title, Field.Store.YES);
-//            doc.add(titleField);
-//            Field contentField = new StringField("contents", contents, Field.Store.YES);
-//            doc.add(contentField);
-//            doc.add(new LongPoint("modified", lastModified));
-//            doc.add(new TextField("contents", new BufferedReader(new InputStreamReader(stream, StandardCharsets.UTF_8))));
-//            if (writer.getConfig().getOpenMode() == OpenMode.CREATE) {
-//                System.out.println("adding " + url);
-//                writer.addDocument(doc);
-//            } else {
-//                System.out.println("updating " + url);
-//                writer.updateDocument(new Term("url", url.toString()), doc);
-//            }
-//        }
-//    }
 // lấy file JSON
     private void parseQueryDetailObject(JSONObject queryDetail) {
         /**
@@ -263,19 +185,6 @@ public class IndexFiles {
     }
 
     public void readJSON() {
-        //JSON parser object to parse read file
-//        JSONParser jsonParser = new JSONParser();
-//        try (FileReader reader = new FileReader("Group02.json")) {
-//            JSONObject root = (JSONObject) jsonParser.parse(reader);
-//            JSONArray collection = (JSONArray) root.get("collection");
-//            collection.forEach(q -> parseQueryDetailObject((JSONObject) q));
-//        } catch (FileNotFoundException e) {
-//            e.printStackTrace();
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        } catch (ParseException e) {
-//            e.printStackTrace();
-//        }
         JSONParser jsonParser = new JSONParser();
         try (FileReader reader = new FileReader("All.json")) {
             JSONArray r = (JSONArray) jsonParser.parse(reader);
@@ -304,11 +213,6 @@ public class IndexFiles {
                 String title = (String) factObj.get("title");
                 String content = (String) factObj.get("content");
                 String fileContent = url + "\r\n" + title + "\r\n" + content;
-//                SiteUrl s = new SiteUrl();
-//                JSONObject factObj = (JSONObject) iterator.next();
-//                s.url = (String) factObj.get("url");
-//                s.title = (String) factObj.get("title");
-//                s.content = (String) factObj.get("content");
                 try {
                     x = x + 1;
                     File file = new File("Docs/Doc" + x + ".txt");
@@ -369,128 +273,5 @@ public class IndexFiles {
             }
 
         }
-//        for (int i = arrSize; i < arrJson.size(); i++) {
-//            arrSize = arrSize + 1;
-//            site = (JSONArray) arrJson.get(i).arrSites;
-//            Iterator<JSONObject> iterator = site.iterator();
-//            while (iterator.hasNext()) {
-//                JSONObject factObj = (JSONObject) iterator.next();
-//                String url1 = (String) factObj.get("url");
-//                String title1 = (String) factObj.get("title");
-//                String content1 = (String) factObj.get("content");
-//                String fileContent = url1 + "\n" + title1 + "\n" + content1;
-//                Document doc = new Document();
-//                Field urlField = new StringField("url", url1, Field.Store.YES);
-//                doc.add(urlField);
-//                Field titleField = new StringField("title", title1, Field.Store.YES);
-//                doc.add(titleField);
-//                Field contentField = new StringField("content", content1, Field.Store.YES);
-//                doc.add(contentField);
-//                doc.add(new LongPoint("modified", miniSecond));
-//                doc.add(new TextField("contents", fileContent, Field.Store.YES));
-//
-//                if (writer.getConfig().getOpenMode() == OpenMode.CREATE) {
-//                    System.out.println("adding " + url1);
-//                    writer.addDocument(doc);
-//                } else {
-//                    System.out.println("updating " + url1);
-//                    writer.updateDocument(new Term("url", url1.toString()), doc);
-//                }
-//            }
-//        }
     }
-
-//    static void indexDocs(final IndexWriter writer, Path path) throws IOException {
-//        if (Files.isDirectory(path)) {
-//            Files.walkFileTree(path, new SimpleFileVisitor<Path>() {
-//                @Override
-//                public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) throws IOException {
-//                    try {
-//                        indexDoc(writer, file, attrs.lastModifiedTime().toMillis());
-//                    } catch (IOException ignore) {
-//                        // don't index files that can't be read.
-//                    }
-//                    return FileVisitResult.CONTINUE;
-//                }
-//            });
-//        } else {
-//            indexDoc(writer, path, Files.getLastModifiedTime(path).toMillis());
-//        }
-//        
-//    }
-//    
-//    static void indexDoc(IndexWriter writer, Path file, long lastModified) throws IOException {
-//        try (InputStream stream = Files.newInputStream(file)) {
-//            // make a new, empty document
-//            Document doc = new Document();
-//
-//            // Add the path of the file as a field named "path".  Use a
-//            // field that is indexed (i.e. searchable), but don't tokenize
-//            // the field into separate words and don't index term frequency
-//            // or positional information:
-//            Field pathField = new StringField("path", file.toString(), Field.Store.YES);
-//            doc.add(pathField);
-//            
-//            BufferedReader buff = new BufferedReader(new InputStreamReader(Files.newInputStream(file), StandardCharsets.UTF_8));
-//            String line;
-//            String url = null, title = null, content = null;
-//            int l = 0;
-//            while ((line = buff.readLine()) != null) {
-//                if (l == 0) {
-//                    url = line;
-//                    l = 1;
-//                } else if (l == 1) {
-//                    title = line;
-//                    l = 2;
-//                } else {
-//                    content = line;
-//                }
-//            }
-//            
-//            buff.close();
-//            
-//            if (url == null) {
-//                url = "null";
-//            }
-//            if (title == null) {
-//                title = "null";
-//            }
-//            if (content == null) {
-//                content = "null";
-//            }
-//            Field urlField = new StringField("url", url, Field.Store.YES);
-//            doc.add(urlField);
-//            Field titleField = new StringField("title", title, Field.Store.YES);
-//            doc.add(titleField);
-//            Field contentField = new StringField("content", content, Field.Store.YES);
-//            doc.add(contentField);
-//
-//            // Add the last modified date of the file a field named "modified".
-//            // Use a LongPoint that is indexed (i.e. efficiently filterable with
-//            // PointRangeQuery).  This indexes to milli-second resolution, which
-//            // is often too fine.  You could instead create a number based on
-//            // year/month/day/hour/minutes/seconds, down the resolution you require.
-//            // For example the long value 2011021714 would mean
-//            // February 17, 2011, 2-3 PM.
-//            doc.add(new LongPoint("modified", lastModified));
-//
-//            // Add the contents of the file to a field named "contents".  Specify a Reader,
-//            // so that the text of the file is tokenized and indexed, but not stored.
-//            // Note that FileReader expects the file to be in UTF-8 encoding.
-//            // If that's not the case searching for special characters will fail.
-//            doc.add(new TextField("contents", new BufferedReader(new InputStreamReader(stream, StandardCharsets.UTF_8))));
-//            
-//            if (writer.getConfig().getOpenMode() == OpenMode.CREATE) {
-//                // New index, so we just add the document (no old document can be there):
-//                System.out.println("adding " + file);
-//                writer.addDocument(doc);
-//            } else {
-//                // Existing index (an old copy of this document may have been indexed) so
-//                // we use updateDocument instead to replace the old one matching the exact
-//                // path, if present:
-//                System.out.println("updating " + file);
-//                writer.updateDocument(new Term("path", file.toString()), doc);
-//            }
-//        }
-//    }
 }

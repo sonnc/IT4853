@@ -41,6 +41,7 @@ import org.apache.lucene.search.highlight.Highlighter;
 import org.apache.lucene.search.highlight.InvalidTokenOffsetsException;
 import org.apache.lucene.search.highlight.QueryScorer;
 import org.apache.lucene.search.highlight.SimpleHTMLFormatter;
+import org.apache.lucene.search.highlight.TextFragment;
 
 public class SimpleSearcher {
 
@@ -69,10 +70,11 @@ public class SimpleSearcher {
         int start = (page - 1) * hitsPerPage;
         int end = start + hitsPerPage;
 
+        // highilight
         Formatter formatter = new SimpleHTMLFormatter();
         QueryScorer scorer = new QueryScorer(query);
         Highlighter highlighter = new Highlighter(formatter, scorer);
-        Fragmenter fragmenter = new SimpleSpanFragmenter(scorer, 10);
+        Fragmenter fragmenter = new SimpleSpanFragmenter(scorer, 1000);
         highlighter.setTextFragmenter(fragmenter);
 
         for (int i = start; i < Math.min(end, hits.length); ++i) {
@@ -83,17 +85,21 @@ public class SimpleSearcher {
             String text = doc.get("content");
             TokenStream stream = TokenSources.getAnyTokenStream(reader, scoreDoc.doc, "content", analyzer);
 
-            //Get highlighted text fragments
-            String[] frags = highlighter.getBestFragments(stream, text, 20);
+            //Get highlighted text fragment
+            TextFragment[] frags = highlighter.getBestTextFragments(stream, text, false, 4);
             String highlight = "";
-            for (String frag : frags) {
+            for (TextFragment frag : frags) {
                 highlight = highlight + frag;
                 System.out.println(highlight);
             }
             obj.put("url", doc.get("url"));
             obj.put("title", doc.get("title"));
 //            obj.put("content", doc.get("content"));
-            obj.put("frags", highlight);
+            if (highlight.length() < 200) {
+                obj.put("frags", highlight);
+            } else {
+                obj.put("frags", highlight.substring(0, 200));
+            }
 
             arr.add(obj);
         }
